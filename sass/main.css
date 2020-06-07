@@ -16,6 +16,36 @@ body {
   color: #333;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,7 +63,7 @@ body {
 
 .logo__text {
   font-size: 2.4rem;
-  color: #41803f;
+  color: #539f43;
 }
 
 .top-nav {
@@ -54,6 +84,7 @@ body {
 .top-nav__link {
   text-decoration: none;
   color: #777;
+  cursor: pointer;
 }
 
 .top-nav__link:hover {
@@ -61,12 +92,100 @@ body {
 }
 
 .top-nav__cart {
+  color: #539f43;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.top-nav__cart:hover {
   color: #41803f;
-  font-size: 2.5rem;
+  -webkit-animation: pulse 0.5s infinite;
+          animation: pulse 0.5s infinite;
+}
+
+.hero__search {
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hero__search-input {
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: inherit;
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #777;
+  padding: 0.7rem 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-right: -3.25rem;
+}
+
+.hero__search-input:focus {
+  outline: none;
+}
+
+.hero__search-input::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #777;
+}
+
+.hero__search-button {
+  font-size: 1.8rem;
+  border: none;
+  color: #777;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.hero__search-button:focus {
+  outline: none;
+}
+
+.hero__search-button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.vendors {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vendors__text {
+  font-size: 1.8rem;
+  color: #777;
+  margin-right: 4rem;
+}
+
+.vendors__photo {
+  width: 10rem;
+}
+
+.container {
+  width: 120rem;
+  margin: auto;
 }
 
 .navigation {
   padding: 1rem 2rem;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
