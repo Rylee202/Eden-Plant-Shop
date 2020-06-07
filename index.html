@@ -17,12 +17,11 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="header__logo-box">
-          <img class="header__logo" src="images/logo.png" alt="Eden Logo" />
-          <span class="header__logo-text">Ed&eacute;n</span>
-        </div>
-
-        <nav class="header__navigation">
+        <nav class="navigation">
+          <div class="logo">
+            <img class="logo__photo" src="images/logo.png" alt="Eden Logo" />
+            <span class="logo__text">Ed&eacute;n</span>
+          </div>
           <ul class="top-nav">
             <li class="top-nav__item">
               <a href="#" class="top-nav__link">Home</a>
@@ -39,14 +38,13 @@
             <li class="top-nav__item">
               <a href="#" class="top-nav__link">Contact</a>
             </li>
+            <li class="top-nav__cart">
+              <i class="fas fa-shopping-bag"></i>
+            </li>
           </ul>
         </nav>
 
-        <div class="header__cart">
-          <i class="fas fa-shopping-bag"></i>
-        </div>
-
-        <form action="#" class="header__search">
+        <form action="#" class="search">
           <input
             type="text"
             class="search__input"

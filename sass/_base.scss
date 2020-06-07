@@ -1,1 +1,19 @@
-// Animations, Typography, and Utilities
+// Base, Animations, Typography, and Utilities
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: $color-grey-dark;
+}
